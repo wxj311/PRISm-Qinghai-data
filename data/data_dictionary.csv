@@ -1,0 +1,66 @@
+original_name,standardized_name,variable_type,label,coding_or_units,notes
+,study_id,identifier,De-identified study record ID,PRISM000001 ...,Added during standardization for public-release tracking.
+PRQ,prism,binary,PRISm outcome indicator,"0=no PRISm, 1=PRISm",Outcome variable in uploaded dataset
+Gender,sex,categorical,Sex,"0=female, 1=male",Codes inferred from Table 1
+Age,age_years,numeric,Age,years,
+Ethnicity,ethnicity,categorical,Ethnicity,"0=other_ethnic_minority, 1=han, 2=hui, 3=tibetan",Codes inferred from Table 1
+DPR,duration_permanent_residence_years,numeric,Duration of permanent residence,years,
+HRA,residential_altitude_m,categorical,Residential altitude,"meters (2850, 2940, 3176)",
+EEH,environmental_exposure_history,binary,Occupational/environmental exposure history,"0=no, 1=yes",
+IMD,inorganic_mineral_dust_exposure,binary,Inorganic mineral dust exposure,"0=no, 1=yes",
+MCP,metal_carbonaceous_particles_exposure,binary,Metal and carbonaceous particles exposure,"0=no, 1=yes",
+CGVP,chemical_gaseous_volatile_pollutants_exposure,binary,Chemical gaseous volatile pollutants exposure,"0=no, 1=yes",
+BSPF,biological_sensitizing_pathogenic_factor_exposure,binary,Biological sensitizing/pathogenic factor exposure,"0=no, 1=yes",
+PHF,physical_hazard_exposure,binary,Physical hazard exposure,"0=no, 1=yes",
+DOS,duration_smoking_years,numeric,Duration of smoking,years,
+TSA,total_smoking_pack_years,numeric,Total smoking amount,pack-years,
+DAC,duration_alcohol_consumption_years,numeric,Duration of alcohol consumption,years,
+AC,alcohol_consumption_liang_per_week,numeric,Alcohol consumption,liang/week,
+SpO2,spo2_pct,numeric,Peripheral oxygen saturation,%,
+HR,heart_rate_bpm,numeric,Heart rate,beats per minute,
+RR,respiratory_rate_bpm,numeric,Respiratory rate,breaths per minute,
+SBP,systolic_bp_mmhg,numeric,Systolic blood pressure,mmHg,
+DBP,diastolic_bp_mmhg,numeric,Diastolic blood pressure,mmHg,
+BMI,bmi_kg_m2,numeric,Body mass index,kg/m^2,
+COPD-SQ,copd_sq_score,numeric,COPD-SQ questionnaire score,score,
+COPD,copd_history,binary,History of COPD,"0=no, 1=yes",
+CAD,cad_history,binary,History of coronary artery disease,"0=no, 1=yes",
+Hypertension,hypertension_history,binary,History of hypertension,"0=no, 1=yes",
+DM,diabetes_mellitus_history,binary,History of diabetes mellitus,"0=no, 1=yes",
+Dyslipidmia,dyslipidemia_history,binary,History of dyslipidemia,"0=no, 1=yes",Original column typo preserved in raw source
+Hyperuricemia,hyperuricemia_history,binary,History of hyperuricemia,"0=no, 1=yes",
+WBC,white_blood_cell_count_10e9_l,numeric,White blood cell count,10^9/L,
+Neut,neutrophil_fraction,numeric,Neutrophil fraction,proportion (0-1),"Source table labels this as %, but values are stored mainly as fractions"
+Lymph,lymphocyte_fraction,numeric,Lymphocyte fraction,proportion (0-1),Rows >1 were converted from percent to fraction Transformation applied: if value > 1 then divide by 100 (4 rows).
+Mono,monocyte_fraction,numeric,Monocyte fraction,proportion (0-1),
+Eos,eosinophil_fraction,numeric,Eosinophil fraction,proportion (0-1),Rows >1 were converted from percent to fraction Transformation applied: if value > 1 then divide by 100 (3 rows).
+Baso,basophil_fraction,numeric,Basophil fraction,proportion (0-1),
+ANC,absolute_neutrophil_count_10e9_l,numeric,Absolute neutrophil count,10^9/L,
+Lymphc,absolute_lymphocyte_count_10e9_l,numeric,Absolute lymphocyte count,10^9/L,
+Monoc,absolute_monocyte_count_10e9_l,numeric,Absolute monocyte count,10^9/L,
+Eosc,absolute_eosinophil_count_10e9_l,numeric,Absolute eosinophil count,10^9/L,
+Basoc,absolute_basophil_count_10e9_l,numeric,Absolute basophil count,10^9/L,
+RBC,red_blood_cell_count_10e12_l,numeric,Red blood cell count,10^12/L,
+Hb,hemoglobin_g_l,numeric,Hemoglobin,g/L,
+Hct,hematocrit_fraction,numeric,Hematocrit,proportion (0-1),Rows >1 were converted from percent to fraction Transformation applied: if value > 1 then divide by 100 (2009 rows).
+PLT,platelet_count_10e9_l,numeric,Platelet count,10^9/L,
+MPV,mean_platelet_volume_fl,numeric,Mean platelet volume,fL,
+PDW,platelet_distribution_width_fl,numeric,Platelet distribution width,fL,
+PCT,plateletcrit_fraction,numeric,Plateletcrit,proportion (0-1),Rows >1 were converted from percent to fraction Transformation applied: if value > 1 then divide by 100 (1 rows).
+TBIL,total_bilirubin_umol_l,numeric,Total bilirubin,µmol/L,
+DBIL,direct_bilirubin_umol_l,numeric,Direct bilirubin,µmol/L,
+IBIL,indirect_bilirubin_umol_l,numeric,Indirect bilirubin,µmol/L,
+TP,total_protein_g_l,numeric,Total protein,g/L,
+ALB,albumin_g_l,numeric,Albumin,g/L,
+GLB,globulin_g_l,numeric,Globulin,g/L,
+ALT,alanine_aminotransferase_u_l,numeric,Alanine aminotransferase,U/L,
+AST,aspartate_aminotransferase_u_l,numeric,Aspartate aminotransferase,U/L,
+TC,total_cholesterol_mmol_l,numeric,Total cholesterol,mmol/L,
+TG,triglycerides_mmol_l,numeric,Triglycerides,mmol/L,
+HDL,hdl_cholesterol_mmol_l,numeric,High-density lipoprotein cholesterol,mmol/L,
+LDL,ldl_cholesterol_mmol_l,numeric,Low-density lipoprotein cholesterol,mmol/L,
+Urea,urea_mmol_l,numeric,Urea,mmol/L,
+Cr,creatinine_umol_l,numeric,Creatinine,µmol/L,
+UA,uric_acid_umol_l,numeric,Uric acid,µmol/L,
+FEV1,fev1_l,numeric,Forced expiratory volume in 1 second,L,
+FEV1/FVC,fev1_fvc_pct,numeric,FEV1/FVC ratio,%,Stored as percentage points
