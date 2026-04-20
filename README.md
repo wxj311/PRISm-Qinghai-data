@@ -33,6 +33,6 @@ PRISm-Qinghai-data/
 │  ├─ prism64_standardized_labeled.csv
 │  ├─ data_dictionary.csv
 │  └─ qc_review_flags.csv
-├─ docs/
+├─ docx/
 │  └─ PRISM64_standardized_package.xlsx
 └─ README.md
